@@ -1,0 +1,21 @@
+{
+  "name": "lodash-template-cli",
+  "version": "0.0.1",
+  "description": "Run lodash.template from the command line.",
+  "preferGlobal": true,
+  "main": "bin/template.js",
+  "bin": "bin/template.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register"
+  },
+  "author": "twalker",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.7.1",
+    "lodash.template": "^3.4.0",
+    "promise": "^7.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.3"
+  }
+}
