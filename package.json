@@ -1,21 +1,36 @@
 {
   "name": "lodash-template-cli",
-  "version": "0.0.1",
-  "description": "Run lodash.template from the command line.",
+  "version": "0.0.2",
+  "description": "lodash.template from the command line.",
+  "homepage": "https://github.com/twalker/lodash-template-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twalker/lodash-template-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twalker/lodash-template-cli/issues"
+  },
+  "keywords": [
+    "template",
+    "lodash"
+  ],
+  "author": "twalker",
+  "license": "MIT",
   "preferGlobal": true,
-  "main": "bin/template.js",
-  "bin": "bin/template.js",
+  "bin": {
+    "_template": "bin/_template.js"
+  },
   "scripts": {
     "test": "mocha --compilers js:babel/register"
   },
-  "author": "twalker",
-  "license": "MIT",
   "dependencies": {
     "commander": "^2.7.1",
     "lodash.template": "^3.4.0",
     "promise": "^7.0.0"
   },
   "devDependencies": {
+    "babel": "^5.0.12",
+    "chai": "^2.2.0",
     "mocha": "^2.2.3"
   }
 }

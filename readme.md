@@ -1,8 +1,18 @@
 #lodash-template-cli
+
 Run lodash.template from the command line.
 
+### install
+
 ```
-Usage: template [options]
+npm install -g twalker/lodash-template-cli
+```
+
+
+### Usage
+
+```
+Usage: _template [options]
 
 Options:
 
@@ -12,14 +22,42 @@ Options:
 
 ```
 
+### example
 
+
+tpl.html
+
+```html
+<html>
+  version: ${version}
+  is number 1: ${version === 1}
+</html>
+```
+
+data.json
+
+```javascript
+{ "version": 1 }
+```
+
+```bash
+_template -f tpl.html -j data.json -o out.html
+```
+
+__outputs__
+
+out.html
+
+```html
+<html>
+  version: 1
+  is number 1: true
+</html>
+
+```
 
 TODO:
 
-- template should just be first arg
-- pick a name
-  + template
-  + _template
-  + lodash-template
-
-- test
+- switch from commander to yargs
+  + template should just be first arg
+  + tempate and data should be required
