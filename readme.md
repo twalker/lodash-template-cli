@@ -1,7 +1,7 @@
 #lodash-template-cli
 
 Run lodash.template from the command line.  
-e.g. `_template tpl.html -j data.json -o out.html`
+e.g. `_template tpl.html -j data.json`
 
 ### install
 
@@ -13,14 +13,11 @@ npm install -g twalker/lodash-template-cli
 ### Usage
 
 ```
-Usage: _template [options]
+Usage: _template <file> [options]
 
 Options:
-
-  -f, --file [file]  Template file
-  -j, --json [file|url]  JSON file or URL
-  -o, --out [file]   Output file
-
+  -j, --json [file|url]  JSON file or URL (required)
+  -o, --out [file]       Output file (optional)
 ```
 
 ### example
@@ -44,7 +41,7 @@ data.json
 from terminal:
 
 ```bash
-_template -f tpl.html -j data.json -o out.html
+_template tpl.html -j data.json -o out.html
 ```
 
 __output__
@@ -56,5 +53,18 @@ out.html
   version: 1
   is number 1: true
 </html>
+```
 
+#### additional examples
+
+Use a url that returns json:
+
+```bash
+_template tpl.html -j http://api.example/cats.json
+```
+
+Pipe output to something else:
+
+```bash
+_template tpl.html -j cats.json | less
 ```

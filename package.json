@@ -1,6 +1,6 @@
 {
   "name": "lodash-template-cli",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "lodash.template from the command line.",
   "homepage": "https://github.com/twalker/lodash-template-cli",
   "repository": {
