@@ -17,9 +17,9 @@ Usage: _template [options]
 
 Options:
 
-  -f, --file [path]  Template file
-  -j, --json [path]  Json file
-  -o, --out [path]   Output file
+  -f, --file [file]  Template file
+  -j, --json [file|url]  JSON file or URL
+  -o, --out [file]   Output file
 
 ```
 

@@ -11,7 +11,7 @@
     "url": "https://github.com/twalker/lodash-template-cli/issues"
   },
   "keywords": [
-    "template",
+    "_template",
     "lodash"
   ],
   "author": "twalker",
@@ -21,12 +21,13 @@
     "_template": "bin/_template.js"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel/register"
+    "test": "mocha --compilers js:babel/register -t 5000"
   },
   "dependencies": {
     "commander": "^2.7.1",
     "lodash.template": "^3.4.0",
-    "promise": "^7.0.0"
+    "promise": "^7.0.0",
+    "request": "^2.55.0"
   },
   "devDependencies": {
     "babel": "^5.0.12",
