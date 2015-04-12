@@ -39,5 +39,5 @@ Promise
   })
   .catch(function(err){
     process.stderr.write(err.stack + '\n')
-    process.exit(err.errno);
+    process.exit(1);
   });
