@@ -7,8 +7,6 @@ var program = require('commander'),
     read = Promise.denodeify(fs.readFile),
     get = Promise.denodeify(require('request').get);
 
-//console.log('req', get)
-//http://jsonip.com
 program
   .version(pkg.version)
   .option('-f, --file [file]', 'Template file')
@@ -22,6 +20,7 @@ if(!program.file || !program.json) program.help();
 // Support output to stdout or file
 var ws = (program.out) ? fs.createWriteStream(program.out) : process.stdout;
 
+// promise json from a file path or a url to json
 function getData(pathOrUrl){
   var isUrl = /^http/.test(pathOrUrl);
   if(isUrl){

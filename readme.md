@@ -1,7 +1,7 @@
 #lodash-template-cli
 
 Run lodash.template from the command line.  
-e.g. `_template -f tpl.html -j data.json -o out.html`
+e.g. `_template tpl.html -j data.json -o out.html`
 
 ### install
 
@@ -24,7 +24,6 @@ Options:
 ```
 
 ### example
-
 
 __input__
 tpl.html
@@ -58,9 +57,3 @@ out.html
 </html>
 
 ```
-
-TODO:
-
-- switch from commander to yargs
-  + template should just be first arg
-  + tempate and data should be required
