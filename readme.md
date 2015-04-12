@@ -26,6 +26,7 @@ Options:
 ### example
 
 __input__
+
 tpl.html
 
 ```html
