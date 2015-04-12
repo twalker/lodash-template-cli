@@ -9,9 +9,11 @@ var program = require('commander'),
 program
   .version(pkg.version)
   .option('-f, --file [path]', 'Template file')
-  .option('-j, --json [path]', 'Json file', {})
+  .option('-j, --json [path]', 'JSON file', {})
   .option('-o, --out [path]', 'Output file')
   .parse(process.argv);
+
+if(!program.file) program.file = program.args[0];
 
 if(!program.file || !program.json) program.help();
 

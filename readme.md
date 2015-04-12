@@ -1,6 +1,7 @@
 #lodash-template-cli
 
-Run lodash.template from the command line.
+Run lodash.template from the command line.  
+e.g. `_template -f tpl.html -j data.json -o out.html`
 
 ### install
 
@@ -25,6 +26,7 @@ Options:
 ### example
 
 
+__input__
 tpl.html
 
 ```html
@@ -33,18 +35,19 @@ tpl.html
   is number 1: ${version === 1}
 </html>
 ```
-
 data.json
 
 ```javascript
 { "version": 1 }
 ```
 
+from terminal:
+
 ```bash
 _template -f tpl.html -j data.json -o out.html
 ```
 
-__outputs__
+__output__
 
 out.html
 
